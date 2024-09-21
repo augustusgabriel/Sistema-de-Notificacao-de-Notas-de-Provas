@@ -1,0 +1,143 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  width: 320px;
+}
+
+.logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #383636;
+  margin-top: -10px;
+  font-size: 18px;
+}
+
+.formulario-email {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.formulario-email label {
+  display: block;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.formulario-email input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.formulario-email input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-botao {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-botao:hover {
+  background-color: #0056b3;
+}
+
+.cadastro {
+  margin-top: 20px;
+}
+
+.cadastro span {
+  color: #777;
+}
+
+.cadastro-botao {
+  color: #007BFF;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.cadastro-botao:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%; 
+    max-width: 400px; 
+    padding: 30px; 
+  }
+
+  h2 {
+    font-size: 16px; 
+  }
+
+  .formulario-email label,
+  .formulario-email input {
+    font-size: 12px; 
+  }
+
+  .login-botao {
+    font-size: 14px; 
+  }
+
+  .cadastro span {
+    font-size: 12px; 
+  }
+
+  .cadastro-botao {
+    font-size: 12px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    max-width: 90%; 
+  }
+
+  h2 {
+    font-size: 14px; 
+  }
+
+  .login-botao {
+    padding: 10px; 
+  }
+}
