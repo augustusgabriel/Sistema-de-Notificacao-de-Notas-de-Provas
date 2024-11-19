@@ -4,9 +4,9 @@ services:
   web: # service name 
     build:
       dockerfile: Dockerfile
-      context: ./backend
+      context: ./
     volumes: 
-      - ./backend:/home/app/webapp
+      - ./backend:/Sistema_de_Notificacao_de_Notas_de_Provas/Sistema_de_Notificacao_de_Notas_de_Provas
     env_file: 
       - ./.env # name of the env file
     image: backend_app
